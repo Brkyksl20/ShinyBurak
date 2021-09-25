@@ -51,7 +51,7 @@ fe=read.csv("data/fixedeffects.csv")[,-1]
 #replace NA with 0...assume informative NA's
 data[is.na(data)]=0
 
-NHtracts=readOGR("data\\NHanover.shp")
+NHtracts=readOGR("data/NHanover.shp")
 
 
 #simply plot the arrest data
