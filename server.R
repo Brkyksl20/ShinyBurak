@@ -46,12 +46,12 @@ fillmap2<-function(map, figtitle, y , leg.loc="beside", y.scl=NULL,
   }
 }
 
-data=read.csv("data/wpd_shiny_tract1018.csv")
+data=read.csv("data/NHanover.csv")
 fe=read.csv("data/fixedeffects.csv")[,-1]
 #replace NA with 0...assume informative NA's
 data[is.na(data)]=0
 
-NHtracts=readOGR("data\\tl_2016_37_NHCounty_tract.shp")
+NHtracts=readOGR("data\\NHanover.shp")
 
 
 #simply plot the arrest data
